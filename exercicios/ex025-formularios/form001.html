@@ -8,17 +8,30 @@
     <style>
         *{
             font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            color: white;
+        }
+        input{
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+        }
+        div.button > p > input:hover{
+            background-color: rgb(31, 219, 72);
+            transition-duration: 0.3s;
         }
     </style>
 </head>
 <body>
     <h1>Meu Primeiro Formulário</h1>
-    <form method="post" action="cadastro.php" autocomplete="off">
+    <form  action="cadastro.php" method="post" autocomplete="off">
         <p><label for="inome">Nome:</label> 
             <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome: </label>
             <input type="text" name="sobrenome" id="isobrenome"></p>
-        <p><input type="submit" value="Enviar"></p>
+        <div class="button">
+            <p><input type="submit" value="Enviar"></p>
+        </div>
     </form>
 </body>
 </html>
